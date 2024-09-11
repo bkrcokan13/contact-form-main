@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Contact Form</title>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="forms">
+      <!--Personal Info Box-->
+      <div class="personal-form-box">
+        <div class="form-input-field">
+          <label for="firstname">First Name <strong>*</strong></label>
+          <input type="text" name="firstname" id="firstname-input" class="input-text-field">
+          <span class="error-text firstname-error">This field is required</span>
+        </div>
+        <div class="form-input-field">
+          <label for="lastname">Last Name <strong>*</strong></label>
+          <input type="text" name="lastname" id="lastname-input" class="input-text-field">
+          <span class="error-text lastname-error">This field is required</span>
+        </div>
+      </div>
+      <!--Email Form-->
+      <div class="email-form-box">
+        <div class="form-input-field">
+          <label for="usermail">Email Address <strong>*</strong></label>
+          <input type="email" name="usermail" id="input-email-field" class="input-text-field email-field ">
+          <span class="error-text email-error">Please enter a valid email address</span>
+        </div>
+      </div>
+
+      <!--RadioButtons Field-->
+      <div class="radiobutton-form-box">
+        <div class="form-input-field">
+          <label for="radiobuttons">Query Type <strong>*</strong></label>
+          <div class="radio-button-field">
+            <a href="#" class="radio-button-container">
+              <input type="radio" name="radiobuttons" class="query-radio-btn" id="general-choice">
+              <h4>General Enquiry</h4>
+            </a>
+            <a href="#" class="radio-button-container">
+              <input type="radio" name="radiobuttons" class="query-radio-btn" id="support-choice">
+              <h4>Support Request</h4>
+            </a>
+          </div>
+        </div>
+        <span class="error-text radio-button-error">Please select a query type</span>
+      </div>
+      <!--Message Box Field-->
+      <div class="message-box-field field-error">
+        <div class="form-input-field">
+          <label for="message-box">Message <strong>*</strong></label>
+          <textarea name="message-box" id="message-input" class="message-field-box"></textarea>
+        </div>
+        <span class="error-text message-box-error">Please select a query type</span>
+
+      </div>
+      <!--Checkbox Field-->
+      <div class="checkbox-area">
+        <div class="check-box-field">
+          <div class="form-input-field checkbox-field">
+            <input type="checkbox" name="check-box" id="approve-check-box">
+            <label for="check-box">I consent to being contacted by the team <strong>*</strong></label>
+          </div>
+        </div>
+        <span class="error-text checkbox-error">Please select a query type</span>
+
+      </div>
+
+      <div class="submit-button">
+        <a href="#" id="submit-btn">Submit</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/script.js"></script>
+</body>
+
+</html>
